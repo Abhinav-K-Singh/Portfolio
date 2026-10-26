@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#EDF0F4">
+  <meta name="description" content="Abhinav Kumar Singh, Cloud Data Engineer working with Azure Databricks, Snowflake, PySpark and Azure Data Factory.">
+  <title>Abhinav Kumar Singh | Cloud Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="pre" aria-hidden="true">
+  <small>LOADING PIPELINE</small>
+  <b>Abhinav<i>.</i></b>
+  <div class="bar"><span id="preBar"></span></div>
+  <small id="preNum">000%</small>
+</div>
+
+<div id="prog" aria-hidden="true"></div>
+<div id="glow" aria-hidden="true"></div>
+<header id="hdr">
+  <nav class="wrap" aria-label="Main">
+    <a class="logo" href="#top">abhinav<i>.</i></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#pipeline">Pipeline</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="tools">
+      <a class="btn navres" href="Abhinav_Kumar_Singh_Resume.pdf" target="_blank" rel="noopener" data-resume>Resume</a>
+      <button class="icon-btn" id="theme" aria-label="Toggle light or dark theme" title="Toggle theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <canvas id="flow" aria-hidden="true"></canvas>
+    <div>
+      <div class="hello">Hello, world</div>
+      <h1><span class="ln"><span>Hi, I'm <em>Abhinav</em>,</span></span><span class="ln"><span>Data Engineer<span class="caret"></span></span></span></h1>
+      <p class="lede">I build production ETL and ELT pipelines on Azure Databricks, Snowflake and PySpark. Over 10 million records move through my work each day, organised into clean Bronze, Silver and Gold layers that finance and analytics teams can rely on.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work →</a>
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="btn" href="Abhinav_Kumar_Singh_Resume.pdf" target="_blank" rel="noopener" data-resume>↓ Download resume</a>
+      </div>
+      <p class="where">Lucknow, India · Engineer at Tata Consultancy Services</p>
+    </div>
+
+    <div class="stage" id="stage">
+      <svg viewBox="0 0 400 400" role="img" aria-label="Illustrated avatar whose eyes follow your cursor">
+        <!-- monitor -->
+        <rect x="30" y="40" width="340" height="250" rx="16" fill="var(--fg)"/>
+        <rect x="44" y="54" width="312" height="222" rx="6" fill="var(--screen)"/>
+        <!-- screen details -->
+        <g fill="none" stroke-width="2" opacity=".55">
+          <path d="M60 80h54" stroke="var(--bronze)"/><path d="M60 94h86" stroke="var(--silver)"/><path d="M60 108h40" stroke="var(--gold)"/>
+          <path d="M300 80h40" stroke="var(--gold)"/><path d="M280 94h60" stroke="var(--silver)"/><path d="M310 108h30" stroke="var(--bronze)"/>
+        </g>
+        <!-- person, clipped to screen -->
+        <clipPath id="clip"><rect x="44" y="54" width="312" height="222" rx="6"/></clipPath>
+        <g clip-path="url(#clip)">
+          <g id="body">
+            <path d="M70 290c0-62 52-86 130-86s130 24 130 86z" fill="var(--shirt)"/>
+            <path d="M176 204l24 34 24-34" fill="none" stroke="var(--skin)" stroke-width="0"/>
+            <rect x="182" y="176" width="36" height="40" rx="10" fill="var(--skin)"/>
+            <path d="M176 204q24 22 48 0" fill="none" stroke="color-mix(in srgb,var(--shirt) 60%,#000)" stroke-width="3"/>
+          </g>
+          <g id="head">
+            <ellipse cx="200" cy="140" rx="54" ry="60" fill="var(--skin)"/>
+            <ellipse cx="147" cy="144" rx="7" ry="12" fill="var(--skin)"/>
+            <ellipse cx="253" cy="144" rx="7" ry="12" fill="var(--skin)"/>
+            <path d="M144 134c-6-50 28-76 58-76 38 0 62 28 54 76-10-22-26-34-54-34-30 0-48 12-58 34z" fill="var(--hair)"/>
+            <path d="M160 110c16-14 40-18 66-10" fill="none" stroke="var(--hair)" stroke-width="0"/>
+            <!-- brows -->
+            <path d="M166 124q12-7 24-2M210 122q12-5 24 2" fill="none" stroke="var(--hair)" stroke-width="4" stroke-linecap="round"/>
+            <!-- eyes -->
+            <circle cx="178" cy="142" r="13" fill="#fff"/><circle cx="222" cy="142" r="13" fill="#fff"/>
+            <g id="pupils"><circle id="pl" cx="178" cy="142" r="6" fill="#14110F"/><circle id="pr" cx="222" cy="142" r="6" fill="#14110F"/></g>
+            <rect id="lidL" x="165" y="129" width="26" height="0" fill="var(--skin)"/><rect id="lidR" x="209" y="129" width="26" height="0" fill="var(--skin)"/>
+            <!-- glasses -->
+            <g fill="none" stroke="var(--hair)" stroke-width="4">
+              <circle cx="178" cy="142" r="17"/><circle cx="222" cy="142" r="17"/><path d="M195 140q5-5 10 0"/><path d="M161 140l-14-4M239 140l14-4"/>
+            </g>
+            <path d="M186 176q14 12 28 0" fill="none" stroke="#7a3b2a" stroke-width="4" stroke-linecap="round"/>
+          </g>
+        </g>
+        <!-- stand -->
+        <path d="M170 290h60l10 50h-80z" fill="var(--fg)"/>
+        <rect x="120" y="338" width="160" height="14" rx="7" fill="var(--fg)"/>
+        <circle cx="200" cy="40" r="0"/>
+      </svg>
+      <span class="tag t1">BRONZE · raw</span>
+      <span class="tag t2">SILVER · clean</span>
+      <span class="tag t3">GOLD · ready</span>
+    </div>
+  </div>
+
+  <div class="metrics" role="list">
+    <div role="listitem"><strong data-n="10" data-s="M+">10M+</strong><span>records processed in production pipelines</span></div>
+    <div role="listitem"><strong data-n="1000" data-s="+">1000+</strong><span>files orchestrated daily with ADF and Control-M</span></div>
+    <div role="listitem"><strong data-n="35" data-s="%">35%</strong><span>faster queries and processing time</span></div>
+    <div role="listitem"><strong data-n="30" data-s="%">30%</strong><span>less manual effort through automation</span></div>
+  </div>
+</main>
+
+<div class="marq" aria-hidden="true"><div class="track">
+  <div style="display:flex"><span>Azure Databricks</span><span>Snowflake</span><span>PySpark</span><span>Azure Data Factory</span><span>Spark SQL</span><span>Python</span><span>SQL</span><span>Control-M</span><span>Azure DevOps</span><span>Medallion Architecture</span></div>
+  <div style="display:flex"><span>Azure Databricks</span><span>Snowflake</span><span>PySpark</span><span>Azure Data Factory</span><span>Spark SQL</span><span>Python</span><span>SQL</span><span>Control-M</span><span>Azure DevOps</span><span>Medallion Architecture</span></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <div class="sec-head"><span class="label">About</span><h2>Read me first</h2></div>
+  <div class="about">
+    <div class="readme">
+      <div class="tabbar"><span class="dots"><i></i><i></i><i></i></span><span>README.md</span></div>
+      <div class="body">
+        <h3># Abhinav Kumar Singh</h3>
+        <div class="badges">
+          <span class="badge"><b>role</b><span>Cloud Data Engineer</span></span>
+          <span class="badge"><b>experience</b><span>2+ years</span></span>
+          <span class="badge"><b>employer</b><span>TCS</span></span>
+          <span class="badge"><b>base</b><span>Lucknow</span></span>
+          <span class="badge"><b>certified</b><span>Databricks DE Associate</span></span>
+        </div>
+        <p>I build and maintain production ETL/ELT pipelines on Azure Databricks, Snowflake, PySpark and Azure Data Factory, processing 10M+ records for enterprise reporting and analytics.</p>
+        <p>I write SQL and Python for transformation and pipeline work, use Git and CI/CD every day, and care about data quality, documentation and engineering standards.</p>
+      </div>
+    </div>
+    <div class="focus">
+      <span class="label">Currently curious about</span>
+      <ul>
+        <li><span><strong>Agentic AI data readiness.</strong> Getting data clean, governed and documented enough for AI agents to use it.</span></li>
+        <li><span><strong>Finance automation.</strong> Pipelines that take manual reporting work off finance teams.</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="pipeline"><div class="wrap">
+  <div class="sec-head"><span class="label">How I design data</span><h2>The Medallion pipeline</h2></div>
+  <div class="med">
+    <div class="layers" role="tablist" aria-label="Medallion layers">
+      <button class="layer" role="tab" data-l="bronze" aria-selected="true"><b>Bronze</b><span>RAW</span></button>
+      <button class="layer" role="tab" data-l="silver" aria-selected="false"><b>Silver</b><span>VALIDATED</span></button>
+      <button class="layer" role="tab" data-l="gold" aria-selected="false"><b>Gold</b><span>BUSINESS-READY</span></button>
+    </div>
+    <div class="detail" id="detail" role="tabpanel" aria-live="polite"></div>
+  </div>
+  <div class="runner">
+    <div class="rhead"><span class="label">Simulation · a typical daily load</span><button class="btn primary" id="run" type="button">▶ Run pipeline</button></div>
+    <div class="rtrack">
+      <div class="node" data-s="0" style="--c:var(--muted)"><b>Source</b><small>1000+ files</small></div>
+      <div class="node" data-s="1" style="--c:var(--bronze)"><b>Bronze</b><small>raw landing</small></div>
+      <div class="node" data-s="2" style="--c:var(--silver)"><b>Silver</b><small>clean + masked</small></div>
+      <div class="node" data-s="3" style="--c:var(--gold)"><b>Gold</b><small>modelled</small></div>
+      <div class="node" data-s="4" style="--c:var(--accent)"><b>Snowflake</b><small>reporting</small></div>
+    </div>
+    <div class="rbar"><span id="rfill"></span></div>
+    <div class="rstat"><span id="rcount">0</span><small>records processed</small></div>
+    <pre class="term" id="term" aria-live="polite">$ pipeline idle. Press run.</pre>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="sec-head"><span class="label">Experience · git log</span><h2>Commit history</h2></div>
+  <div class="gitwrap">
+    <div class="gitmeta">
+      <div><b>Cloud Data Engineer</b> · Tata Consultancy Services · Kolkata</div>
+      <div class="label">June 2024 → present · branch main</div>
+    </div>
+    <div class="filters" role="group" aria-label="Filter commits">
+      <button class="fbtn" type="button" data-f="all" aria-pressed="true">all</button>
+      <button class="fbtn" type="button" data-f="feat" aria-pressed="false">feat</button>
+      <button class="fbtn" type="button" data-f="perf" aria-pressed="false">perf</button>
+      <button class="fbtn" type="button" data-f="sec" aria-pressed="false">sec</button>
+      <button class="fbtn" type="button" data-f="ops" aria-pressed="false">ops</button>
+      <button class="fbtn" type="button" data-f="ci" aria-pressed="false">ci</button>
+      <button class="fbtn" type="button" data-f="docs" aria-pressed="false">docs</button>
+    </div>
+    <ol class="commits" id="commits">
+      <li class="commit feat" data-t="feat"><span class="tp">feat</span><p>Built production ETL pipelines in <strong>Azure Databricks and Snowflake</strong> across 1000+ files, giving the business reliable enterprise reporting and analytics.</p><span class="impact">10M+</span></li>
+      <li class="commit feat" data-t="feat"><span class="tp">feat</span><p>Designed and deployed <strong>Medallion Architecture</strong> (Bronze, Silver, Gold) in Databricks. Queries got faster and the data got easier to maintain.</p><span class="impact">+35%</span></li>
+      <li class="commit sec" data-t="sec"><span class="tp">sec</span><p>Engineered <strong>data masking and encryption</strong> frameworks that protect sensitive records and improve compliance in production.</p><span class="impact">10M+</span></li>
+      <li class="commit perf" data-t="perf"><span class="tp">perf</span><p>Streamlined Spark SQL transformations and workload execution, <strong>cutting processing time</strong> and using resources better.</p><span class="impact">−35%</span></li>
+      <li class="commit ops" data-t="ops"><span class="tp">ops</span><p>Orchestrated daily workflows with <strong>Azure Data Factory and Control-M</strong>, automating file processing and meeting SLAs.</p><span class="impact">1000+</span></li>
+      <li class="commit ops" data-t="ops"><span class="tp">ops</span><p>Added data quality validation checks and pipeline monitoring to support SLA tracking and engineering standards.</p><span class="impact">SLA</span></li>
+      <li class="commit ci" data-t="ci"><span class="tp">ci</span><p>Automated dependency detection and parameter extraction, using <strong>Git and Azure DevOps CI/CD</strong>, to remove repeated manual work.</p><span class="impact">−30%</span></li>
+      <li class="commit docs" data-t="docs"><span class="tp">docs</span><p>Maintain pipeline documentation and transformation specs. Take part in peer code reviews and sprint ceremonies.</p><span class="impact">team</span></li>
+      <li class="commit init" data-t="init"><span class="tp">init</span><p><strong>B.E. Computer Science</strong>, Chandigarh University, Punjab. August 2020 to June 2024. CGPA 7.98.</p><span class="impact">7.98</span></li>
+    </ol>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="sec-head"><span class="label">Toolbox · query it</span><h2>SELECT * FROM skills</h2></div>
+  <div class="sqlbox">
+    <pre class="sqlq" id="sqlq"></pre>
+    <div class="cats" id="cats" role="group" aria-label="Filter by category"></div>
+    <div class="tblw"><table class="tbl"><thead><tr><th>#</th><th>tool</th><th>category</th></tr></thead><tbody id="tb"></tbody></table></div>
+    <div class="cnt" id="cnt"></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="sec-head"><span class="label">Selected projects</span><h2>Architectures I've shipped</h2></div>
+  <div class="projects">
+    <article class="proj">
+      <span class="stack">Azure Databricks · Spark SQL · Snowflake</span>
+      <h3>Walgreens Healthcare Data Platform</h3>
+      <div class="arch" aria-label="Pipeline: healthcare sources to Databricks to Snowflake to analytics">
+        <span class="an b">Healthcare sources</span><span class="lc"></span><span class="an s">Databricks</span><span class="lc"></span><span class="an g">Snowflake</span><span class="lc"></span><span class="an b">Analytics</span>
+      </div>
+      <ul>
+        <li>Built scalable ETL pipelines that ingest structured and semi-structured healthcare data into Snowflake.</li>
+        <li>Tuned queries to improve warehouse performance and data availability.</li>
+      </ul>
+      <div class="pm"><span>millions of records</span><span>query tuning</span><span>semi-structured data</span></div>
+    </article>
+    <article class="proj">
+      <span class="stack">Databricks · Azure Data Factory</span>
+      <h3>E-Commerce Store Data Pipeline</h3>
+      <div class="arch" aria-label="Pipeline: store data through ADF into Bronze, Silver, Gold and reports">
+        <span class="an b">Bronze</span><span class="lc"></span><span class="an s">Silver</span><span class="lc"></span><span class="an g">Gold</span><span class="lc"></span><span class="an b">Reports</span>
+      </div>
+      <ul>
+        <li>Designed a Medallion Architecture that improved data quality and analytical query performance.</li>
+        <li>Automated the processing pipelines behind business reports, so they come out consistent and reliable.</li>
+      </ul>
+      <div class="pm"><span>medallion</span><span>automated reporting</span><span>ADF orchestration</span></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="recognition"><div class="wrap">
+  <div class="sec-head"><span class="label">Recognition</span><h2>Certified and rewarded</h2></div>
+  <div class="reco">
+    <div class="cert">
+      <div class="seal"><span>✓</span></div>
+      <span class="label">Certification</span>
+      <h3>Databricks Certified Data Engineer Associate</h3>
+      <p>Official Databricks credential for building data pipelines on the Lakehouse platform.</p>
+      <a class="btn" style="align-self:flex-start" href="https://credentials.databricks.com/de4e2128-4ab2-4f2c-b6e1-cccc97f1531d##acc.uo0mSBQD" target="_blank" rel="noopener">Verify credential ↗</a>
+    </div>
+    <div class="awards">
+      <div class="award" style="--c:var(--gold)"><div class="medal2">2×</div><div><h3>Applause Awards</h3><p>Timely delivery and high-quality service on projects for a major pharmaceutical client, using Databricks, Snowflake and ADF.</p></div></div>
+      <div class="award" style="--c:var(--silver)"><div class="medal2">2×</div><div><h3>Spot Awards</h3><p>High-quality data solutions on a pharmaceutical project with Azure Databricks, Snowflake and ADF.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <div>
+    <span class="label">Contact</span>
+    <h2 style="margin-top:14px">Have data that needs a better pipeline?</h2>
+  </div>
+  <div class="rows">
+    <div class="resume">
+      <div class="pdf">PDF</div>
+      <div><h3>Resume</h3><p style="margin:4px 0 0;color:var(--muted);font-size:.92rem">Abhinav Kumar Singh · 1 page · PDF</p></div>
+      <div class="acts">
+        <a class="btn primary" href="Abhinav_Kumar_Singh_Resume.pdf" target="_blank" rel="noopener" data-resume>↓ Download resume</a>
+      </div>
+    </div>
+    <div class="row"><span id="mail">singhabhinav.aks@gmail.com</span><button data-copy="mail">Copy</button></div>
+    <div class="row"><span id="tel">+91 7668845085</span><button data-copy="tel">Copy</button></div>
+    <div class="links">
+      <a class="btn" href="https://www.linkedin.com/in/abhinav-kumar-singh-27894115a/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/Abhinav-K-Singh" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</div></section>
+
+<div class="wrap"><footer><span>© 2026 Abhinav Kumar Singh</span><span>Lucknow, Uttar Pradesh, India</span></footer></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
