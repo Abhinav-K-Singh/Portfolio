@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="home">
 <div id="pre" aria-hidden="true">
   <small>LOADING PIPELINE</small>
   <b>Abhinav<i>.</i></b>
@@ -30,6 +30,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="projects.html">Project Lab</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="tools">
@@ -46,9 +47,9 @@
     <div>
       <div class="hello">Hello, world</div>
       <h1><span class="ln"><span>Hi, I'm <em>Abhinav</em>,</span></span><span class="ln"><span>Data Engineer<span class="caret"></span></span></span></h1>
-      <p class="lede">I build production ETL and ELT pipelines on Azure Databricks, Snowflake and PySpark. Over 10 million records move through my work each day, organised into clean Bronze, Silver and Gold layers that finance and analytics teams can rely on.</p>
+      <p class="lede">I build production ETL and ELT pipelines on Azure Databricks, Snowflake and PySpark, plus reusable SFTP-to-ADLS file-transfer pipelines in Azure Data Factory. Over 10 million records across 1,000+ files move through my work, organised into clean Bronze, Silver and Gold layers that finance and analytics teams can rely on.</p>
       <div class="cta">
-        <a class="btn primary" href="#projects">See my work →</a>
+        <a class="btn primary" href="projects.html">See my work →</a>
         <a class="btn" href="#contact">Get in touch</a>
         <a class="btn" href="Abhinav_Kumar_Singh_Resume.pdf" target="_blank" rel="noopener" data-resume>↓ Download resume</a>
       </div>
@@ -131,8 +132,8 @@
           <span class="badge"><b>base</b><span>Lucknow</span></span>
           <span class="badge"><b>certified</b><span>Databricks DE Associate</span></span>
         </div>
-        <p>I build and maintain production ETL/ELT pipelines on Azure Databricks, Snowflake, PySpark and Azure Data Factory, processing 10M+ records for enterprise reporting and analytics.</p>
-        <p>I write SQL and Python for transformation and pipeline work, use Git and CI/CD every day, and care about data quality, documentation and engineering standards.</p>
+        <p>Cloud Data Engineer with 2+ years of experience building and optimizing enterprise data pipelines on Azure Databricks, Snowflake, PySpark, SQL and Azure Data Factory. I have processed 10M+ records across 1,000+ files, implemented Medallion Architecture, built reusable SFTP-to-ADLS file-transfer pipelines and orchestrated production workflows.</p>
+        <p>I'm strong in distributed data processing, ETL automation, data security and performance optimization. I use Git and CI/CD every day and care about data quality, documentation and engineering standards.</p>
       </div>
     </div>
     <div class="focus">
@@ -174,8 +175,8 @@
   <div class="sec-head"><span class="label">Experience · git log</span><h2>Commit history</h2></div>
   <div class="gitwrap">
     <div class="gitmeta">
-      <div><b>Cloud Data Engineer</b> · Tata Consultancy Services · Kolkata</div>
-      <div class="label">June 2024 → present · branch main</div>
+      <div><b>Cloud Data Engineer</b> · Tata Consultancy Services · Kolkata, West Bengal</div>
+      <div class="label">June 2024 → present · DFLE Migration · DataLynx</div>
     </div>
     <div class="filters" role="group" aria-label="Filter commits">
       <button class="fbtn" type="button" data-f="all" aria-pressed="true">all</button>
@@ -192,8 +193,11 @@
       <li class="commit sec" data-t="sec"><span class="tp">sec</span><p>Engineered <strong>data masking and encryption</strong> frameworks that protect sensitive records and improve compliance in production.</p><span class="impact">10M+</span></li>
       <li class="commit perf" data-t="perf"><span class="tp">perf</span><p>Streamlined Spark SQL transformations and workload execution, <strong>cutting processing time</strong> and using resources better.</p><span class="impact">−35%</span></li>
       <li class="commit ops" data-t="ops"><span class="tp">ops</span><p>Orchestrated daily workflows with <strong>Azure Data Factory and Control-M</strong>, automating file processing and meeting SLAs.</p><span class="impact">1000+</span></li>
-      <li class="commit ops" data-t="ops"><span class="tp">ops</span><p>Added data quality validation checks and pipeline monitoring to support SLA tracking and engineering standards.</p><span class="impact">SLA</span></li>
+      <li class="commit ops" data-t="ops"><span class="tp">ops</span><p>Added data quality validation checks and workflow monitoring to support SLA tracking and engineering standards.</p><span class="impact">SLA</span></li>
       <li class="commit ci" data-t="ci"><span class="tp">ci</span><p>Automated dependency detection and parameter extraction, using <strong>Git and Azure DevOps CI/CD</strong>, to remove repeated manual work.</p><span class="impact">−30%</span></li>
+      <li class="commit feat" data-t="feat"><span class="tp">feat</span><p><strong>DataLynx:</strong> designed a reusable, parameter-driven generic pipeline in Azure Data Factory that connects to multiple SFTP servers through configurable connection details. No more server-specific pipelines.</p><span class="impact">1 for N</span></li>
+      <li class="commit ops" data-t="ops"><span class="tp">ops</span><p><strong>DataLynx:</strong> configured a reusable linked service for secure inbound and outbound file transfers between SFTP servers and ADLS.</p><span class="impact">SFTP↔ADLS</span></li>
+      <li class="commit ops" data-t="ops"><span class="tp">ops</span><p><strong>DataLynx:</strong> developed a parent orchestration pipeline that calls the generic pipeline, moves files for processing, applies customer-defined filtering rules and loads results into new business-aligned tables.</p><span class="impact">parent</span></li>
       <li class="commit docs" data-t="docs"><span class="tp">docs</span><p>Maintain pipeline documentation and transformation specs. Take part in peer code reviews and sprint ceremonies.</p><span class="impact">team</span></li>
       <li class="commit init" data-t="init"><span class="tp">init</span><p><strong>B.E. Computer Science</strong>, Chandigarh University, Punjab. August 2020 to June 2024. CGPA 7.98.</p><span class="impact">7.98</span></li>
     </ol>
@@ -212,32 +216,8 @@
 
 <section id="projects"><div class="wrap">
   <div class="sec-head"><span class="label">Selected projects</span><h2>Architectures I've shipped</h2></div>
-  <div class="projects">
-    <article class="proj">
-      <span class="stack">Azure Databricks · Spark SQL · Snowflake</span>
-      <h3>Walgreens Healthcare Data Platform</h3>
-      <div class="arch" aria-label="Pipeline: healthcare sources to Databricks to Snowflake to analytics">
-        <span class="an b">Healthcare sources</span><span class="lc"></span><span class="an s">Databricks</span><span class="lc"></span><span class="an g">Snowflake</span><span class="lc"></span><span class="an b">Analytics</span>
-      </div>
-      <ul>
-        <li>Built scalable ETL pipelines that ingest structured and semi-structured healthcare data into Snowflake.</li>
-        <li>Tuned queries to improve warehouse performance and data availability.</li>
-      </ul>
-      <div class="pm"><span>millions of records</span><span>query tuning</span><span>semi-structured data</span></div>
-    </article>
-    <article class="proj">
-      <span class="stack">Databricks · Azure Data Factory</span>
-      <h3>E-Commerce Store Data Pipeline</h3>
-      <div class="arch" aria-label="Pipeline: store data through ADF into Bronze, Silver, Gold and reports">
-        <span class="an b">Bronze</span><span class="lc"></span><span class="an s">Silver</span><span class="lc"></span><span class="an g">Gold</span><span class="lc"></span><span class="an b">Reports</span>
-      </div>
-      <ul>
-        <li>Designed a Medallion Architecture that improved data quality and analytical query performance.</li>
-        <li>Automated the processing pipelines behind business reports, so they come out consistent and reliable.</li>
-      </ul>
-      <div class="pm"><span>medallion</span><span>automated reporting</span><span>ADF orchestration</span></div>
-    </article>
-  </div>
+  <div class="projects" id="featured" aria-live="polite"><p class="empty">Loading projects…</p></div>
+  <div class="more"><a class="btn primary" href="projects.html">Open the Project Lab →</a><span class="label">work · hobby · study</span></div>
 </div></section>
 
 <section id="recognition"><div class="wrap">
@@ -280,6 +260,8 @@
 </div></section>
 
 <div class="wrap"><footer><span>© 2026 Abhinav Kumar Singh</span><span>Lucknow, Uttar Pradesh, India</span></footer></div>
+  <script src="projects-data.js" defer></script>
+  <script src="projects.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>

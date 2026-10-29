@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#EDF0F4">
+  <meta name="description" content="Project Lab: work, hobby and study projects by Abhinav Kumar Singh, Cloud Data Engineer.">
+  <title>Project Lab | Abhinav Kumar Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="lab">
+<div id="prog" aria-hidden="true"></div>
+<header id="hdr">
+  <nav class="wrap" aria-label="Main">
+    <a class="logo" href="index.html">abhinav<i>.</i></a>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="projects.html" aria-current="page">Project Lab</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="tools">
+      <a class="btn navres" href="Abhinav_Kumar_Singh_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="icon-btn" id="theme" aria-label="Toggle light or dark theme" title="Toggle theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="labhead">
+    <span class="label">Project Lab · work, hobby, study</span>
+    <h1 class="ptitle">Everything I build</h1>
+    <p class="lede">Production work from my job, plus the things I build for fun or to learn. Filter by category or search by tool.</p>
+  </div>
+  <div class="sqlbox labbox">
+    <pre class="sqlq" id="labsql"></pre>
+    <div class="cats" id="labcats" role="group" aria-label="Filter by category"></div>
+    <div class="searchrow"><label for="q" class="label">Search</label><input id="q" type="search" placeholder="Databricks, SQL, Python…" autocomplete="off"></div>
+    <div class="cnt" id="labcnt"></div>
+  </div>
+  <div class="projects labgrid" id="grid" aria-live="polite"></div>
+</main>
+
+<div class="wrap"><footer><span>© 2026 Abhinav Kumar Singh</span><a href="index.html">← Back to portfolio</a></footer></div>
+  <script src="projects-data.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>
